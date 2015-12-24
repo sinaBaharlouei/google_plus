@@ -1,0 +1,92 @@
+.headers {
+    color: #555555;
+    margin-left: 15%;
+    font-family: sans-serif;
+    height: 5%;
+    display: block;
+    padding-top: 2%;
+}
+.header {
+    font-size: 130%;
+    font-weight: normal;
+    margin-top: -1%;
+}
+
+.paragraph {
+    margin-top: -1.5%;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.row {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.first_span {
+    margin-left: 15%;
+}
+
+h4.name {
+    font-size: 85%;
+    margin-top: 5%;
+    margin-left: 8%;
+    color: #202020;
+}
+
+span.work {
+    font-size: 80%;
+    color: #BBBBBB;
+    display: block;
+    margin-left: 8%;
+    margin-top: -10%;
+    position: absolute;
+}
+
+span.friends {
+    font-size: 80%;
+    display: block;
+    margin-left: 8%;
+    margin-top: 8%;
+    font-weight: bold;
+    position: absolute;
+}
+
+span.common {
+    color: #CBBBCB;
+    font-size: 100%;
+    font-weight: 800;
+    position: absolute;
+}
+
+span.and {
+    color: #CBBBCB;
+}
+
+button.btn {
+    margin-left: 8%;
+    margin-top: 35%;
+    width: 84%;
+    font-weight: bold;
+    font-size: 60%;
+    background-color: #FEFEFE;
+
+}
+
+.btn_text {
+    color: #345453;
+    position: absolute;
+    margin-top: 3%;
+}
+
+.icon_user {
+    background-image: url("../images/Home%20Pic/12.png");
+    margin-left: -35%;
+    width: 28%;
+}
+
+
+div#content_div {
+    height: 1400px;
+}

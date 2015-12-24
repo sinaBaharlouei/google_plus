@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/stylesheets/table.css" />
+<link rel="stylesheet" href="/stylesheets/global.css" />
+<link rel="stylesheet" href="/stylesheets/Home.css" />
+
+<div id="top_div">
+	<a href="/post/home" class="links">Home</a>
+	<a href="/index/more" class="links">View more</a>
+	<a href="/profile/profile" class="links">Profile</a>
+	<?php if($this->isAdmin):?>
+		<a href="/user/admin" class="links" id="linked">Report Panel</a>
+	<?php endif; ?>
+</div>
+
+<table>
+	<thead>
+	<tr>
+		<th>#</th>
+		<th>Notification</th>
+		<th>Status</th>
+	</tr>
+	</thead>
+	<tbody>
+	<?php
+	if(!empty($this->nots))
+		$i = 0;
+		foreach($this->nots as $not): $i++; ?>
+			<tr>
+				<td><strong><?php echo $i; ?></strong></td>
+				<td><?php echo $not['content']; ?></td>
+				<td><?php if($not['is_seen'] == 0) echo "New"; else echo "Seen"; ?></td>
+			</tr>
+		<?php endforeach; ?>
+
+	</tbody>
+</table>

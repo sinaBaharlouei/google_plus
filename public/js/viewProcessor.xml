@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+
+				<table style="margin-bottom: 10%">
+					<xsl:for-each select="people/person">
+							<div class="span2" style="margin-top: 2%">
+								<img alt="people1" width="100%">
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="image"/>
+                                    </xsl:attribute>
+                                </img>
+								<h4 class="name"><xsl:value-of select="name"/></h4>
+								<span class="work"><xsl:value-of select="about"/></span>
+								<span class="friends">Matual friend: <xsl:value-of select="matualFriend"/></span>
+
+								<a href="/user/search/username/admin">
+									<button class="btn">
+										<img class="icon_user" src="../images/Home%20Pic/12.png" alt="-" />
+										<span class="btn_text">Add</span>
+									</button>
+								</a>
+								<br/><br/>
+							</div>
+					</xsl:for-each>
+				</table>
+	</xsl:template>
+</xsl:stylesheet>
+

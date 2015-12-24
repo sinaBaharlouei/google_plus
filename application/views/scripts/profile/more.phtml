@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>View More</title>
+		<link rel="stylesheet" href="/stylesheets/global.css" />
+		<link rel="stylesheet" href="/stylesheets/View%20more.css" />
+	</head>
+	<body>
+
+	<div id="top_div">
+		<a href="/post/home" class="links">Home</a>
+		<a href="/profile/more" class="links" id="linked">View more</a>
+		<a href="/profile/profile" class="links">Profile</a>
+		<a href="/post/home/order/hot" class="links">Hot posts</a>
+		<?php if($this->isAdmin):?>
+			<a href="/user/admin" class="links">Report Panel</a>
+		<?php endif; ?>
+		<a href="/post/notification" class="links">Notifications</a>
+		<a href="/user/logout" class="links">Logout</a>
+
+	</div>
+
+        <div id="content_div">
+
+        <br/><br/>
+        <div id="xslt">
+
+        </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="/js/view.js"></script>

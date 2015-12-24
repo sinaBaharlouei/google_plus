@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Login page</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="container">
+		<h1>Welcome</h1>
+
+		<form class="form" action="/user/login" method="post">
+			<input type="text" placeholder="Username" name="username" class="inp">
+			<input type="password" placeholder="Password" name="password" class="inp">
+			<button type="submit" id="login-button" class="inp">Login</button>
+			<br><br>
+			<input type="checkbox" placeholder="Remember me!" name="remember" class="check" width="3%">
+			Remember Me!
+		</form>
+
+
+		<form class="form" action="/user/register" method="get">
+			<button type="submit" id="login-button" class="inp">Register</button>
+		</form>
+
+	</div>
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</body>
+
+</html>

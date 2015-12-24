@@ -1,0 +1,21 @@
+<head>
+	<title>Edit profile</title>
+	<link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
+<div class="form-style-5">
+	<form method="post" action="/post/edit" enctype="multipart/form-data" >
+		<fieldset>
+			<legend><span class="number">1</span> Edit Post</legend>
+			Post content:<br><br><textarea name="content" cols="30" rows="10"><?php echo $this->post['content'];?>
+			<?php foreach($this->tags as $tag):
+				echo $tag;
+			endforeach; ?>
+			</textarea>
+			<input name="id" value="<?php echo $this->post['id']; ?>" type="hidden"/>
+			New Pic:
+			<input name="post_pic" type="file" />
+			<br><br>
+		</fieldset>
+		<input type="submit" value="Apply" />
+	</form>
+</div>

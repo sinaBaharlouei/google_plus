@@ -1,0 +1,29 @@
+<head>
+	<title>Edit profile</title>
+	<link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
+<div class="form-style-5">
+	<form method="post" action="/profile/edit">
+		<fieldset>
+			<legend><span class="number">1</span> Add new <?php echo $this->category; ?></legend>
+			<input type="text" name="key_field" placeholder="Field">
+			<input type="text" name="value_field" placeholder="Value">
+			<input type="hidden" name="category" value="<?php echo $this->category; ?>">
+		</fieldset>
+		<?php if(!empty($this->items)):?>
+		<fieldset>
+		<label for="job">Item:</label>
+		<select id="job" name="edit_key">
+				<optgroup label="choices">
+					<?php foreach($this->items as $item):?>
+					<option value="<?php echo $item['title'];?>"><?php echo $item['title'];?></option>
+					<?php endforeach; ?>
+				</optgroup>
+		</select>
+		<input type="text" name="edit_value" value="Value">
+			<legend><span class="number">2</span> Edit items</legend>
+		</fieldset>
+		<?php endif; ?>
+		<input type="submit" value="Apply" />
+	</form>
+</div>

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/stylesheets/table.css" />
+<link rel="stylesheet" href="/stylesheets/global.css" />
+<link rel="stylesheet" href="/stylesheets/Home.css" />
+
+<div id="top_div">
+	<a href="/post/home" class="links">Home</a>
+	<a href="/index/more" class="links">View more</a>
+	<a href="/profile/profile" class="links">Profile</a>
+	<?php if($this->isAdmin):?>
+		<a href="/user/admin" class="links" id="linked">Report Panel</a>
+	<?php endif; ?>
+</div>
+
+<table>
+	<thead>
+	<tr>
+		<th>Post Id</th>
+		<th>User Id</th>
+		<th>Text</th>
+		<th>Delete</th>
+	</tr>
+	</thead>
+	<tbody>
+	<?php
+	if(!empty($this->posts))
+	foreach($this->posts as $post): ?>
+	<tr>
+		<td><strong><?php echo $post['id']; ?></strong></td>
+		<td><?php echo $post['user_id']; ?></td>
+		<td><?php echo $post['content']; ?></td>
+		<td>
+			<a href="<?php echo "/post/delete/id/" . $post['id']; ?>">
+				<button>delete</button>
+			</a>
+		</td>
+	</tr>
+	<?php endforeach; ?>
+
+	</tbody>
+</table>

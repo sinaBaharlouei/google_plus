@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+}
+#top_div {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: -2%;
+}
+
+.links {
+    margin-left: 4%;
+    text-decoration: none;
+    color: #777777;
+    text-decoration-color: #595EAC;
+}
+
+#content_div {
+    width: 100%;
+    background-color: #DDDDDD;
+    height: 1200px;
+    margin-top: 3%;
+    overflow: hidden;
+}
+
+.span12 {
+    height: auto;
+    width: 95%;
+    float: left;
+    margin-left: 2%;
+    margin-top: -3%;
+}
+
+.span4 {
+    height: 30%;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.span3 {
+    height: 30%;
+    width: 22%;
+    float: left;
+}
+
+.span2 {
+    height: auto;
+    width: 12%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 0;
+    position: relative;
+    background-color: white;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+a#linked {
+    color: #333333;
+    border-bottom: solid 3px rgba(57, 178, 237, 0.85);
+    display: inline;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.margin-3 {
+    margin-left: -3%;
+}
+
+.margin-2 {
+    margin-left: -2%;
+}
+
+span.margin-8 {
+    margin-left: -8%;
+}
+
+.bold {
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.right {
+    float: right;
+    direction: rtl;
+    margin-right: 8%;
+}
+
+div.border {
+    border-left: solid #AAAAAA 1px;
+}
+
+.blue {
+    color: #6693fa;
+    font-weight: bold;
+}

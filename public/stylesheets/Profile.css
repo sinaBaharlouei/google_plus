@@ -1,0 +1,264 @@
+.links {
+    margin-left: 4%;
+    text-decoration: none;
+}
+
+#profile_info {
+    float: left;
+    background-color: #333333;
+    width: 22%;
+    height: 25%;
+    border-bottom-left-radius: 18%;
+    border-top-left-radius: 18%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+#profile_pic {
+    background-color: green;
+    float: left;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width:46%;
+    height: 25%;
+    margin-top: 1%;
+}
+
+#image {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.image1 {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#user_pic {
+    border-radius: 100%;
+    width: 28%;
+    height: 26%;
+    margin-left: 35%;
+    margin-top: 22%;
+}
+
+#user_info {
+    color: white;
+    margin-top: 2%;
+    font-family: inherit;
+    text-align: center;
+}
+
+#username {
+    font-size: 113%;
+}
+
+span#username:hover {
+    color: gold;
+}
+
+.user_location {
+    text-align: center;
+    font-size: 62.5%;
+}
+
+#user_followers {
+    font-size: 70%;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.span3 {
+    height: 30%;
+    width: 22%;
+    float: left;
+}
+
+#first_div {
+    clear: left;
+    margin-left: 15%;
+}
+
+.span_margin {
+    margin-left: 1%;
+}
+
+.box {
+    width: 100%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 30px;
+    height: auto;
+}
+
+.blue_border {
+    border-top: 4px solid royalblue;
+}
+
+.aqua_border {
+    border-top: 4px solid deepskyblue;
+}
+
+.green_border {
+    border-top: 4px solid limegreen;
+}
+
+.red_border {
+    border-top: 4px solid crimson;
+}
+
+.yellow_border {
+    border-top: 4px solid gold;
+}
+
+.orange_border {
+    border-top: 4px solid #FF9D44;
+}
+
+.purple_border {
+    border-top: 4px solid #A43387;
+}
+
+.dark_blue_border {
+    border-top: 4px solid #595EAC;
+}
+
+.box_title {
+    font-size: 114%;
+    color: #333333;
+    margin-left: 6%;
+    font-weight: normal;
+}
+
+.info_box {
+    margin-left: 6%;
+    margin-bottom: 5%;
+}
+
+.bold_text {
+    font-weight: bold;
+    font-size: 75%;
+    clear: both;
+    margin-bottom: -0%;
+}
+
+.info_text {
+    font-weight: normal;
+    font-size: 75%;
+    color: #AAAAAA;
+    clear: left;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 0;
+}
+
+a.edit_link {
+    font-size: 75%;
+    margin-left: 6%;
+    color: lightskyblue;
+    margin-top: 4%;
+    text-decoration: none;
+}
+
+.light_sky {
+    color: #56bdfa;
+	text-decoration: none;
+}
+
+hr {
+    text-emphasis: #FFFFFF;
+    color: white;
+    background-color: white;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 2px;
+}
+
+.phone {
+    margin-left: 4%;
+    font-size: 70%;
+    color: #555555;
+}
+
+.get_url {
+    margin-top: -2%;
+    font-size: 75%;
+    color: #75bcfa;
+    text-decoration: none;
+}
+
+#googleMap {
+    margin-left: 8%;
+    width: 84%;
+    height: 150px;
+}
+
+.bold_location {
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 75%;
+    clear: both;
+    margin-bottom: 0;
+}
+
+.location {
+    margin-left: 2%;
+    margin-top: 0;
+    font-size: 75%;
+    color: #333333;
+}
+
+.element_info {
+    width: 100%;
+    margin-left: 6%;
+}
+
+.keys {
+    float: left;
+    width: 25%;
+    font-weight: bold;
+    font-size: 75%;
+    position: inherit;
+}
+
+.values {
+    width: 60%;
+    font-size: 75%;
+    margin-left: 6%;
+    float: left;
+    position: inherit;
+}
+
+.shadow_value {
+    color: #BBBBBB;
+}
+
+.shadow_margin {
+    margin-left: 45%;
+}
+
+.friend_list {
+    clear: both;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.friend_img {
+    margin-bottom: 4%;
+    margin-top: -2%;
+    float: left;
+    margin-left: 1%;
+}
+
+.next_col {
+    clear: both;
+    margin-top: 7.5%;
+}
+
+#in_circle {
+    margin-left: 37%;
+}

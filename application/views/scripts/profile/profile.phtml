@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/global.css" />
+    <link rel="stylesheet" href="/stylesheets/Profile.css" />
+</head>
+<body>
+
+    <div id="top_div">
+        <a href="/post/home" class="links">Home</a>
+        <a href="/profile/more" class="links">View more</a>
+        <a href="/profile/profile" class="links" id="linked">Profile</a>
+		<?php if($this->isAdmin):?>
+			<a href="/user/admin" class="links">Report Panel</a>
+		<?php endif; ?>
+    </div>
+    <div id="content_div">
+        <div id="profile_info">
+			<a href="/user/edit">
+            	<img src="/images/personal%20pic/th.jpg" alt="user" id="user_pic" />
+			</a>
+            <div id="user_info">
+                <span id="username"></span> <br>
+                <span class="user_location" id="about"> Attends Amirkabir University of Technology</span> <br>
+                <span class="user_location" id="tagline2"> Lives in Tehran, Tehran, Iran</span> <br><br>
+                <span id="user_followers">
+                    <span class="number" id="followers">60</span>
+                    followers |
+                    <span class="number" id="views">2,909</span>
+                    views</span>
+            </div>
+        </div>
+		<a href="/user/edit">
+			<div id="profile_pic">
+				<img src="../images/personal%20pic/default_cover.jpg" alt="cover" height="100%" width="100%" class="image" id="cover_pic" />
+			</div>
+		</a>
+        <div class="span3" id="first_div">
+
+            <div class="box blue_border">
+                <h2 class="box_title"> People </h2>
+
+                <div class="info_box">
+                    <span class="bold_text"> Followers </span>
+                    <span class="info_text shadow_margin" id="follower"> 57 people </span>
+                </div>
+                <div class="friend_list" id="follower_list">
+                </div>
+                <br>
+
+                <div class="friend_list" id="friends">
+
+                </div>
+                <a href="/profile/edit/category/People" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+
+            <div class="box aqua_border">
+                <h2 class="box_title"> Work </h2>
+                <div id="work">
+
+                </div>
+                <a href="/profile/edit/category/Work" class="edit_link"> Edit </a>
+                <br/><br/>
+
+            </div>
+
+            <div class="box green_border">
+                <h2 class="box_title"> Basic Information </h2>
+
+                <div class="info_box">
+                    <div class="keys" id="keys">
+
+                    </div>
+                    <div class="values" id="values">
+
+                    </div>
+                </div>
+
+                <a href="/profile/edit/category/Basic Information" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+        </div>
+
+        <div class="span3 span_margin">
+            <div class="box red_border">
+                <h2 class="box_title"> Story </h2>
+				<div id="story">
+				</div>
+
+                <a href="/profile/edit/category/Story" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+
+            <div class="box yellow_border">
+                <h2 class="box_title"> Education </h2>
+                <div class="info_box" id="education">
+
+                </div>
+                <a href="/profile/edit/category/Education" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+
+            <div class="box orange_border">
+                <h2 class="box_title"> Contact Information </h2>
+                <div class="info_box">
+                    <p class="bold_text">Contacts</p>
+                    <hr>
+                    <div id="contacts">
+
+                    </div>
+
+                </div>
+                <a href="/profile/edit/category/Contact Information" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+
+        </div>
+
+        <div class="span3 span_margin">
+            <div class="box purple_border">
+                <h2 class="box_title"> Places </h2>
+                <div id="googleMap">
+                    <div id="map" style="width: 100%; height: 100%"></div>
+                </div>
+                <div class="info_box">
+                    <p class="bold_location"> Currently</p>
+                    <p class="location" id="place">Tehran, Tehran, Iran</p>
+                </div>
+                <a href="#" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+            <div class="box dark_blue_border">
+                <h2 class="box_title"> Links </h2>
+                <div class="info_box">
+                    <p class="bold_text">Google+ URL</p>
+                    <p class="info_text"> Preapproved URLs, including google.com/ +sinabaharlouei</p>
+                    <a href="#" class="get_url">Get URL</a>
+
+                    <p class="bold_text">Other profiles</p>
+                    <hr>
+                    <span class="info_text">What pages are about you?</span>
+                    <br><br>
+
+                    <p class="bold_text">Contributor to</p>
+                    <hr>
+                    <span class="info_text">What pages feature your work?</span>
+                    <br><br>
+
+                    <p class="bold_text">Links</p>
+                    <hr>
+                    <div id="links">
+
+
+                    </div>
+                </div>
+
+                <a href="/profile/edit/category/Links" class="edit_link"> Edit </a>
+                <br/><br/>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript" src="/js/profile.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>

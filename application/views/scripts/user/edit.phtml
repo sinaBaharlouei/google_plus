@@ -1,0 +1,22 @@
+<head>
+	<title>Edit profile</title>
+	<link rel="stylesheet" href="/stylesheets/form.css" />
+</head>
+<div class="form-style-5">
+	<form method="post" action="/user/edit" enctype="multipart/form-data" >
+		<fieldset>
+			<legend><span class="number">1</span> Edit Info</legend>
+			Name :<br><br><input type="text" name="username" value="<?php echo $this->user['username']; ?>">
+			Password :<br><br><input type="text" name="password" value="<?php echo $this->user['password']; ?>">
+			About :<br><br><input type="text" name="about" value="<?php echo $this->user['about']; ?>">
+			Place :<br><br><input type="text" name="place" value="<?php echo $this->user['place']; ?>">
+
+			Profile Pic:
+			<input name="profile_pic" type="file" />
+			<br><br>
+			Cover Pic:
+			<input name="cover_pic" type="file" />
+		</fieldset>
+		<input type="submit" value="Apply" />
+	</form>
+</div>
